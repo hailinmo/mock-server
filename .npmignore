@@ -1,0 +1,14 @@
+# 忽略目录
+examples/
+example/
+public/
+dist/
+mock/
+
+# 忽略指定文件
+vue.config.js
+babel.config.js
+.prettierrc.js
+.eslintrc.js
+.eslintignore
+*.map

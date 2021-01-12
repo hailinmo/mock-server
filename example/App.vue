@@ -1,0 +1,28 @@
+<template>
+  <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png" />
+  </div>
+</template>
+
+<script>
+import axios from 'axios'
+export default {
+  name: 'App',
+  mounted() {
+    axios('/mock/framework/principal').then(data => {
+      console.log(data)
+    })
+  },
+}
+</script>
+
+<style lang="scss">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
